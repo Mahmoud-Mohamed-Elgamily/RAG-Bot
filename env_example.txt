@@ -1,0 +1,29 @@
+# Azure OpenAI Configuration (recommended)
+AZURE_OPENAI_API_KEY=your_azure_openai_api_key
+AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
+AZURE_OPENAI_API_VERSION=2023-05-15
+AZURE_OPENAI_DEPLOYMENT_NAME=your_deployment_name
+
+# Alternative: Standard OpenAI Configuration (uncomment if using standard OpenAI API)
+# OPENAI_API_KEY=your_openai_api_key
+# OPENAI_BASE_URL=your_openai_base_url_here
+# OPENAI_MODEL=gpt-4o-2024-08-06
+
+# Kaggle Configuration (optional - for dataset download)
+KAGGLE_USERNAME=your_kaggle_username
+KAGGLE_KEY=your_kaggle_api_key
+KAGGLE_BASE_URL=your_kaggle_base_url_here
+
+# Vector Database Configuration
+CHROMA_PERSIST_DIRECTORY=./chroma_db
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+
+# Application Configuration
+MAX_RESULTS=10
+SIMILARITY_THRESHOLD=0.3
+
+# Performance Optimization Configuration
+MAX_SEARCH_RESULTS=20          # Max results from vector search (affects initial retrieval scope)
+MAX_FINAL_RESULTS=15           # Max results sent to LLM (affects context size and speed)
+ENABLE_DIVERSITY_FILTER=true   # Enable diversity filtering for result variety
+ENABLE_RERANKING=true          # Enable intelligent re-ranking of search results
