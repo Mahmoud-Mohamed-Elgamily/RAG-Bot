@@ -41,7 +41,7 @@ class DataProcessor:
             # Download dataset
             kaggle.api.authenticate()
             kaggle.api.dataset_download_files(
-                'mahmoudharidy/uae-real-estate-2024',
+                'kanchana1990/uae-real-estate-2024-dataset',
                 path=str(self.data_dir),
                 unzip=True
             )
